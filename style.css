@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,sans-serif;
+}
+
+body{
+    background:#060e17;
+    color:#f5f5f5;
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+}
+
+.header{
+    background:#0f1923;
+    border-bottom:2px solid #c9a84c;
+    padding:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#c9a84c;
+    font-size:28px;
+    font-weight:bold;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    border-radius:10px;
+    transition:.3s;
+}
+
+.btn{
+    background:#c9a84c;
+    color:#061019;
+    padding:12px 20px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    opacity:.9;
+}
+
+.card{
+    background:#111d29;
+    border:1px solid #243444;
+    border-radius:16px;
+    padding:20px;
+    margin-top:20px;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:8px;
+    margin-bottom:15px;
+    border-radius:10px;
+    border:none;
+    background:#1c2938;
+    color:white;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.login-box{
+    width:360px;
+    margin:80px auto;
+    background:#111d29;
+    border:1px solid #c9a84c55;
+    border-radius:20px;
+    padding:30px;
+}
+
+.login-title{
+    text-align:center;
+    color:#c9a84c;
+    margin-bottom:20px;
+}
+
+.hidden{
+    display:none;
+}
+
+.nav{
+    display:flex;
+    gap:10px;
+}
+
+.nav button{
+    background:#1b2838;
+    color:white;
+    padding:10px 16px;
+}
+
+.nav button:hover{
+    background:#c9a84c;
+    color:#061019;
+}
+
+.table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.table th{
+    background:#1d2b3b;
+    color:#c9a84c;
+    padding:12px;
+}
+
+.table td{
+    padding:12px;
+    border-bottom:1px solid #223344;
+}
+
+.success{
+    color:#4caf50;
+}
+
+.warning{
+    color:#ff9800;
+}
+
+.danger{
+    color:#ff5252;
+}
