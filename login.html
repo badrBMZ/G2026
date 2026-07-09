@@ -1,0 +1,72 @@
+<div id="loginPage">
+
+<div class="login-box">
+
+<h1 class="login-title">
+BMZ
+</h1>
+
+<input
+id="name"
+placeholder="الاسم"
+>
+
+<input
+id="email"
+placeholder="البريد الإلكتروني"
+type="email"
+>
+
+<input
+id="password"
+placeholder="كلمة المرور"
+type="password"
+>
+
+<button class="btn" onclick="doLogin()">
+تسجيل الدخول
+</button>
+
+<br><br>
+
+<button class="btn" onclick="doRegister()">
+إنشاء حساب
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function doLogin(){
+
+const email=document.getElementById("email").value;
+
+const password=document.getElementById("password").value;
+
+if(login(email,password)){
+
+location.reload();
+
+}
+
+}
+
+function doRegister(){
+
+const name=document.getElementById("name").value;
+
+const email=document.getElementById("email").value;
+
+const password=document.getElementById("password").value;
+
+if(register(name,email,password)){
+
+location.reload();
+
+}
+
+}
+
+</script>
